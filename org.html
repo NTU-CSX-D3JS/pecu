@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>D3.js barchart</title>
+	<script  type="text/javascript" src="d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+</head>
+<body>
+	<script>
+		var w = 800;
+		var h = 450;
+		var arr1 = [75, 50, 65, 40, 50, 30, 60, 80]
+
+		var xscaler = d3.scale.linear()
+				.domain([0, d3.max(arr1)+10])
+				.range([0, w]);
+		var yscaler = d3.scale.linear()
+				.domain([0, arr1.length])
+				.range([0, h]);
+
+		var svg = d3.select("body").append("svg")
+					.attr("id", "chart")
+					.attr("width", w)
+					.attr("height", h);
+
+		svg.selectAll(".bar")
+			.data(arr1)
+			.enter()
+				.append("rect")
+				.attr("class", "bar")
+				.attr("fill", "#1f4e9b")
+				.attr("x", 0)
+				.attr("y", function(d, i){
+					return yscaler(i);
+				})
+				.attr("width", 0)
+				.attr("height", function(d, i){
+					return yscaler(1)-20;
+				})
+				//// transition : longer !
+				.transition().duration(2000)
+				.attr("width", function(d, i){
+					return xscaler(d);
+				})
+
+		svg.selectAll(".bar-label")
+			.data(arr1)
+			.enter()
+				.append("text")
+				.attr("class", "bar-label")
+				.attr("fill", "white")
+				.attr("font-size", "22px")
+				.attr("x", function(d, i){
+					return xscaler(d)+10;
+				})
+				.attr("y", function(d, i){
+					return yscaler(i);
+				})
+				// .attr("dy", function(d, i){
+				// 	return yscaler(1)/2-5;
+				// })
+				.text(function(d, i){
+					return d;
+				})
+				//// transition : text !
+				.transition().delay(2000).duration(1000)
+				.attr("fill", "black")
+
+
+	</script>
+</body>
+</html>
