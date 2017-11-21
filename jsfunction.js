@@ -10,7 +10,6 @@ function d3select(id) {
 }
 
 function changeColor(id) {
-	var newObj = d3select(id).setAttribute("color", "blue");
-	return newObj;
+	return d3select(id).setAttribute("color", "blue");
 }
 
