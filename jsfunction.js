@@ -10,6 +10,6 @@ function d3select(id) {
 }
 
 function changeColor(id) {
-	return document.getElementById(id).setAttribute("color", "blue");
+	return document.getElementById(id).setAttribute("style", "color:blue;");
 }
 
