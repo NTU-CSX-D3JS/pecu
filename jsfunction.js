@@ -5,6 +5,10 @@ function myFunction(p1, p2) {
     return str
 }
 
+function changeColor(obj) {
+	return obj.setAttribute("color", "blue");
+}
+
 function d3select(id) {
 	return document.getElementById(id);
 }
