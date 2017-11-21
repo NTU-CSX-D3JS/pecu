@@ -6,6 +6,7 @@ function myFunction(p1, p2) {
 }
 
 function changeColor(obj) {
+	console.log(obj);
 	var newObj = obj.setAttribute("color", "blue");
 	return newObj;
 }
