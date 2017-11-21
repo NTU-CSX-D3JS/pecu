@@ -5,12 +5,12 @@ function myFunction(p1, p2) {
     return str
 }
 
-function changeColor(obj) {
-	console.log(obj);
-	var newObj = obj.setAttribute("color", "blue");
-	return newObj;
-}
-
 function d3select(id) {
 	return document.getElementById(id);
 }
+
+function changeColor(id) {
+	var newObj = d3select(id).setAttribute("color", "blue");
+	return newObj;
+}
+
