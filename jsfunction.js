@@ -6,7 +6,8 @@ function myFunction(p1, p2) {
 }
 
 function changeColor(obj) {
-	return obj.setAttribute("color", "blue");
+	var newObj = obj.setAttribute("color", "blue");
+	return newObj;
 }
 
 function d3select(id) {
