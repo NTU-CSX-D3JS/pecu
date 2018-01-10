@@ -8,10 +8,10 @@
 
 國立台灣大學生傳所碩士班, 許凱嵐, https://github.com/NTU-CSX-D3JS/r05630002/blob/master/README.md
 
-國立台灣大學獸醫系大學部, 陳麒如, https://github.com/NTU-CSX-D3JS/b06609015
-
-國立台灣大學獸醫系大學部, 曾安麗, https://github.com/NTU-CSX-D3JS/b04609065/blob/master/README.md
-
 國立台灣大學圖資系大學部, 游子賢, https://github.com/NTU-CSX-D3JS/b02106020/blob/master/README.md
 
 國立台灣大學資工系大學部, 施承志, https://github.com/NTU-CSX-D3JS/b05902108/blob/master/README.md
+
+國立台灣大學獸醫系大學部, 曾安麗, https://github.com/NTU-CSX-D3JS/b04609065/blob/master/README.md
+
+國立台灣大學獸醫系大學部, 陳麒如, https://github.com/NTU-CSX-D3JS/b06609015
